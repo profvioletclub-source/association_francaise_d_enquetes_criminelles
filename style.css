@@ -1,0 +1,94 @@
+:root {
+  --violet-pastel: #C8BFE7;
+  --blanc-casse: #F5F5F5;
+  --gris-anthracite: #2E2E2E;
+  --rouge-profond: #8B0000;
+  --bleu-onu: #A3D5E0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--blanc-casse);
+  color: var(--gris-anthracite);
+}
+
+header {
+  background-color: var(--violet-pastel);
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-family: 'Courier New', monospace;
+}
+
+.slogan {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--gris-anthracite);
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.card {
+  background-color: var(--violet-pastel);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid var(--rouge-profond);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--gris-anthracite);
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--rouge-profond);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--bleu-onu);
+}
+
+footer {
+  background-color: var(--gris-anthracite);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
