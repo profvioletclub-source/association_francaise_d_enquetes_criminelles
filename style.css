@@ -104,3 +104,16 @@ header {
   justify-content: center;
   flex-direction: column;
 }
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* espace entre les logos */
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
