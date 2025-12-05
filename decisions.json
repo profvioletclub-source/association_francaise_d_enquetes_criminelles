@@ -182,39 +182,34 @@
     "votes": "4 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, MOUTARDE), 0 CONTRE, 1 ABSTENTION (VON HELLMAN)"
   },
   {
-    "id": "2024-08",
-    "titre": "Projet de création du poste de Secrétaire général",
-    "date": "2024-11-29",
-    "propose": "VIOLET (Objectif de multiplier la possibilité d'organisation. En vue d'un référendum)",
-    "votes": "4 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, MOUTARDE), 0 CONTRE, 1 ABSTENTION (VON HELLMAN)"
+    "id": "2024-07",
+    "titre": "Adhésion de Monsieur Basilic",
+    "date": "2024-10-01",
+    "propose": "VIOLET",
+    "votes": "5 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, MOUTARDE, VON HELLMAN), 0 CONTRE, 0 ABSTENTION"
   },
-      <div class="card">
-        <h3>2024-07 · Adhésion de Monsieur BASILIC</h3>
-        <p><strong>Date :</strong> 01 octobre 2024</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, MOUTARDE, VON HELLMAN), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
-      <div class="card">
-        <h3>2024-06 · Durée de la punition de non-implication en enquête</h3>
-        <p><strong>Date :</strong> 11 juin 2024</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Passage de 1 an à 2 mois, 4 mois, 6 mois, 8 mois, 10 mois, 1 an ou 2 an
-        <p><strong>Votes :</strong> 3 2MOIS (ORCHIDÉE, VON HELLMAN, D'ARTIFROID), 0 4MOIS, 0 6MOIS, 0 8MOIS, 0 10MOIS, 0 1AN, 0 2ANS, 2 ABSTENTION (VIOLET, MOUTARDE)</p>
-        <p>Si récidive, on double la punition</p>
-      </div>
-      <div class="card">
-        <h3>2024-05 · Préparation du projet "Règlement"</h3>
-        <p><strong>Date :</strong> 10 juin 2024</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, MOUTARDE, VON HELLMAN, ORCHIDÉE, D'ARTIFROID), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
-      <div class="card">
-        <h3>2024-04 · Préparation du projet "Nouveau logo"</h3>
-        <p><strong>Date :</strong> 09 juin 2024</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Volonté de changelent de logo pour le club (dans un objectif plus représentatif)</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, MOUTARDE, VON HELLMAN, ORCHIDÉE, D'ARTIFROID), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
+  {
+    "id": "2024-06",
+    "titre": "Durée de la punition de non-implication en enquête",
+    "date": "2024-06-11",
+    "propose": "VIOLET (Passage de 1 an à 2 mois, 4 mois, 6 mois, 8 mois, 10´mois, 1 an ou 2 ans)",
+    "votes": "3 2MOIS (ORCHIDÉE, VON HELLMAN, D'ARTIFROID), 0 4MOIS, 0 6MOIS, 0 8MOIS, 0 10MOIS, 0 1AN, 0 2ANS, 2 ABSTENTION (VIOLET, MOUTARDE) | Si récidive, on double la punition"
+  },
+  {
+    "id": "2024-05",
+    "titre": "Préparation du projet 'Règlement'",
+    "date": "2024-06-10",
+    "propose": "VIOLET",
+    "votes": "5 POUR (VIOLET, MOUTARDE, VON HELLMAN, ORCHIDÉE, D'ARTIFROID), 0 CONTRE, 0 ABSTENTION"
+  },
+  {
+    "id": "2024-04",
+    "titre": "Préparation du projet 'Nouveau logo'",
+    "date": "2024-06-09",
+    "propose": "VIOLET (Volonté de changement de logo pour le club dans un objectif plus représentatif)",
+    "votes": "5 POUR (VIOLET, MOUTARDE, VON HELLMAN, ORCHIDÉE, D'ARTIFROID), 0 CONTRE, 0 ABSTENTION"
+  },
+  
       <div class="card">
         <h3>2024-03 · Préparation du projet "Nouveau nom"</h3>
         <p><strong>Date :</strong> 08 juin 2024</p>
