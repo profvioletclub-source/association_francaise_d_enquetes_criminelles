@@ -1,0 +1,17 @@
+[
+  {
+    "id": "2025-21",
+    "titre": "Adhésion de la Policière Pastèque",
+    "date": "2025-12-01",
+    "propose": "VIOLET",
+    "votes": "5 POUR (VIOLET, SMITH, ORCHIDÉE, VON HELLMAN, MOUTARDE), 0 CONTRE, 0 ABSTENTION"
+  },
+  {
+    "id": "2025-20",
+    "titre": "États reconnus",
+    "date": "2025-11-10",
+    "propose": "VIOLET",
+    "votes": "3 POUR (VIOLET, MOUTARDE, SMITH), 0 CONTRE, 2 ABSTENTION (ORCHIDÉE, VON HELLMAN)"
+  }
+  // ... ajoute les autres décisions ici
+]
