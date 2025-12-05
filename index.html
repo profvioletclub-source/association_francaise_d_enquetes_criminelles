@@ -12,12 +12,18 @@
   <link rel="apple-touch-icon" href="images/logo.png">
 </head>
   
-</head>
 <body>
   <header>
     <img src="images/logo.jpeg" alt="Logo AFEC" class="logo" />
     <h1>AFEC</h1>
     <p class="slogan">Enquêtons pour la Justice</p>
+    <!-- Bouton pour ouvrir la sidebar -->
+    <button class="menu-btn" onclick="toggleSidebar()">☰ Menu</button>
+  </header>
+
+<!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
     <nav>
       <ul>
         <li><a href="membres.html">À propos de nous</a></li>
@@ -26,8 +32,8 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
-
+  </aside>
+  
   <main>
     <section id="about">
       <h2>À propos de l’AFEC</h2>
@@ -38,6 +44,8 @@
       <h2>Nos évènements</h2>
       <div class="card">
         <p>05 décembre 2025 : l'Appli est désormais disponible !<p>
+      </div>
+      <div class="card">
         <p>26 mai 2025 : Élections conseillères</p>
       </div>
     </section>
