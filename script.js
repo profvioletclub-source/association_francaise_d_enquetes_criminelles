@@ -39,3 +39,9 @@ async function chargerDecisions() {
 
 // Lancer le chargement des décisions uniquement si on est sur la page concernée
 document.addEventListener("DOMContentLoaded", chargerDecisions);
+
+// Sidebar
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("open");
+}
