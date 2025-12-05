@@ -147,16 +147,21 @@ header {
   list-style: none;
   padding: 0;
   margin: 2rem 0;
+  display: flex;
+  flex-direction: column; /* ← force l'affichage vertical */
+  gap: 1rem;              /* ← espace entre les liens */
 }
 
 .sidebar nav ul li {
-  margin: 1rem 0;
+  margin: 0;
 }
 
 .sidebar nav ul li a {
+  display: block;         /* ← chaque lien occupe toute la largeur */
   text-decoration: none;
   color: var(--gris-anthracite, #2E2E2E);
   font-weight: bold;
+  padding: 0.5rem 0;
 }
 
 /* Bouton pour ouvrir le menu */
