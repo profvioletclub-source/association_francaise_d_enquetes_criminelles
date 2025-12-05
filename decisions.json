@@ -40,26 +40,28 @@
     "date": "2025-09-29",
     "propose": "VIOLET",
     "votes": "5 POUR (VIOLET, SMITH, ORCHIDÉE, VON HELLMAN, MOUTARDE), 0 CONTRE, 0 ABSTENTION"
-  }
-  <div class="card">
-        <h3>2025-15 · Changement de Logo</h3>
-        <p><strong>Date :</strong> 29 septembre 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, VON HELLMAN, ORCHIDÉE, SMITH, MOUTARDE), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
-      <div class="card">
-        <h3>2025-14 · Projet de suppression des noms de codes</h3>
-        <p><strong>Date :</strong> 26 septembre 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 2 ON LES GARDES (VON HELLMAN, SMITH), 1 ON LES GARDES MAIS ON UTILISE LES VRAIS NOMS (ORCHIDÉE), 2 ABSTENTION (VIOLET, MOUTARDE)</p>
-      </div>
-      <div class="card">
-        <h3>2025-13 · Décernement des diplômes</h3>
-        <p><strong>Date :</strong> 25 septembre 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Voir les pièces jointes (ex_diplome)</p>
-        <p><strong>Votes :</strong> 2 POUR (VIOLET, VON HELLMAN), 0 CONTRE, 3 ABSTENTION (MOUTARDE, ORCHIDÉE, SMITH)</p>
-      </div>
+  },
+  {
+    "id": "2025-15",
+    "titre": "Changement de Logo",
+    "date": "2025-09-29",
+    "propose": "VIOLET",
+    "votes": "5 POUR (VIOLET, VON HELLMAN, ORCHIDÉE, SMITH, MOUTARDE), 0 CONTRE, 0 ABSTENTION"
+  },
+  {
+    "id": "2025-14",
+    "titre": "Projet de suppression des noms de codes",
+    "date": "2025-09-26",
+    "propose": "VIOLET",
+    "votes": "2 ON LES GARDES (VON HELLMAN, SMITH), 1 ON LES GARDES MAIS ON UTILISE LES VRAIS NOMS (ORCHIDÉE), 2 ABSTENTION (VIOLET, MOUTARDE)"
+  },
+  {
+    "id": "2025-13",
+    "titre": "Décernement des diplômes",
+    "date": "2025-09-25",
+    "propose": "VIOLET (voir ex_diplome)",
+    "votes": "2 POUR (VIOLET, VON HELLMAN), 0 CONTRE, 3 ABSTENTION (MOUTARDE, ORCHIDÉE, SMITH)"
+  },
       <div class="card">
         <h3>2025-12 · Dissolution de l'AFEC</h3>
         <p><strong>Date :</strong> 24 septembre 2025</p>
