@@ -10,46 +10,37 @@
     "id": "2025-20",
     "titre": "États reconnus",
     "date": "2025-11-10",
+    "propose": "VIOLET (voir la liste dans le communiqué du 10 novembre 2025)",
+    "votes": "3 POUR (VIOLET, MOUTARDE, SMITH), 0 AVEC QUELQUES MODIFICATIONS, 0 CONTRE, 2 ABSTENTION (ORCHIDÉE, VON HELLMAN)"
+  },
+  {
+    "id": "2025-19",
+    "titre": "Indépendance politique",
+    "date": "2025-11-07",
     "propose": "VIOLET",
-    "votes": "3 POUR (VIOLET, MOUTARDE, SMITH), 0 CONTRE, 2 ABSTENTION (ORCHIDÉE, VON HELLMAN)"
-  }
-  <div class="card">
-        <h3>2025-21 · Adhésion de la Policière Pastèque</h3>
-        <p><strong>Date :</strong> 01 décembre 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, SMITH, ORCHIDÉE, VON HELLMAN, MOUTARDE), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
-      <div class="card">
-        <h3>2025-20 · États reconnus</h3>
-        <p><strong>Date :</strong> 10 novembre 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Voir la liste dans le communiqué du 10 novembre 2025</p>
-        <p><strong>Votes :</strong> 3 POUR (VIOLET, MOUTARDE, SMITH), 0 AVEC QUELQUES MODIFICATIONS, 0 CONTRE, 2 ABSTENTION (ORCHIDÉE, VON HELLMAN)</p>
-      </div>
-      <div class="card">
-        <h3>2025-19 · Indépendance politique</h3>
-        <p><strong>Date :</strong> 07 novembre 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 3 POUR (VIOLET, VON HELLMAN, SMITH), 0 CONTRE, 2 ABSTENTION (ORCHIDÉE, MOUTARDE)</p>
-      </div>
-      <div class="card">
-        <h3>2025-18 · Lieu de vote des élections</h3>
-        <p><strong>Date :</strong> 06 novembre 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 3 SONDAGE DANS WHATSAPP (VON HELLMAN, SMITH, MOUTARDE), 0 SITE, 0 GOOGLE FORMS, 2 ABSTENTION (VIOLET, ORCHIDÉE)</p>
-      </div>
-      <div class="card">
-        <h3>2025-17 · Mise en place du projet "site"</h3>
-        <p><strong>Date :</strong> 02 novembre 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, ORCHIDÉE, VON HELLMAN, MOUTARDE, SMITH), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
-      <div class="card">
-        <h3>2025-16 · Adhésion de l'Abbé Banane</h3>
-        <p><strong>Date :</strong> 29 septembre 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, SMITH, ORCHIDÉE, VON HELLMAN, MOUTARDE), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
+    "votes": "3 POUR (VIOLET, VON HELLMAN, SMITH), 0 CONTRE, 2 ABSTENTION (ORCHIDÉE, MOUTARDE)"
+  },
+  {
+    "id": "2025-18",
+    "titre": "Lieu de vote des élections",
+    "date": "2025-11-06",
+    "propose": "VIOLET",
+    "votes": "3 SONDAGE DANS WHATSAPP (VON HELLMAN, SMITH, MOUTARDE), 0 SITE, 0 GOOGLE FORMS, 2 ABSTENTION (VIOLET, ORCHIDÉE)"
+  },
+  {
+    "id": "2025-17",
+    "titre": "Mise en place du projet 'site'",
+    "date": "2025-11-02",
+    "propose": "VIOLET",
+    "votes": "5 POUR (VIOLET, ORCHIDÉE, VON HELLMAN, MOUTARDE, SMITH), 0 CONTRE, 0 ABSTENTION"
+  },
+  {
+    "id": "2025-16",
+    "titre": "Adhésion de l'Abbé Banane",
+    "date": "2025-09-29",
+    "propose": "VIOLET",
+    "votes": "5 POUR (VIOLET, SMITH, ORCHIDÉE, VON HELLMAN, MOUTARDE), 0 CONTRE, 0 ABSTENTION"
+  },
       <div class="card">
         <h3>2025-15 · Changement de Logo</h3>
         <p><strong>Date :</strong> 29 septembre 2025</p>
