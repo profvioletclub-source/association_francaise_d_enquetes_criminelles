@@ -40,26 +40,26 @@ async function chargerDecisions() {
 // Lancer le chargement des décisions uniquement si on est sur la page concernée
 document.addEventListener("DOMContentLoaded", chargerDecisions);
 
-// --- Chargement des décisions du Conseil ---
+// --- Chargement des membres ---
 async function chargerMembres() {
   try {
     const response = await fetch("membres.json");
     const membres = await response.json();
 
     // Trier par date (du plus récent au plus ancien)
-    membres.sort((a, b) => new Date(b.date) - new Date(a.date));
+    //membres.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     const container = document.getElementById("membres-container");
     if (!container) return; // sécurité : ne fait rien si la page n'a pas ce conteneur
 
-    membres.forEach(membres => {
+    membres.forEach(membre => {
       const card = document.createElement("div");
       card.classList.add("card");
 
       card.innerHTML = `
-        <h3>${decision.id}</h3>
-        <p><strong>Date d'adhésion :</strong> ${decision.date}</p>
-        <p><strong>Lien :</strong> ${decision.lien}</p>
+        <h3>${membre.id}</h3>
+        <p><strong>Date d'adhésion :</strong> ${membre.date}</p>
+        <p><strong>Lien :</strong> ${membre.lien}</p>
       `;
 
       container.appendChild(card);
