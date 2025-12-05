@@ -7,17 +7,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+<header>
+    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
     <img src="images/logo.jpeg" alt="Logo AFEC" class="logo" />
     <h1>Nos membres</h1>
-    <p class="slogan">Notre équipe</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-      </ul>
-    </nav>
   </header>
 
+<!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Acceuil</a></li>
+      </ul>
+    </nav>
+  </aside>
+  
   <main>
     <section>
       <h2>Liste des Membres</h2>
