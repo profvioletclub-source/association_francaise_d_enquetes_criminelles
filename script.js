@@ -10,7 +10,7 @@ if (form) {
 // --- Chargement des décisions du Conseil ---
 async function chargerDecisions() {
   try {
-    const response = await fetch("2025.json");
+    const response = await fetch("decisions/2025.json");
     const decisions = await response.json();
 
     // Trier par date (du plus récent au plus ancien)
