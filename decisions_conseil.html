@@ -8,15 +8,21 @@
 </head>
 <body>
   <header>
+    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
     <img src="images/conseil.jpeg" alt="Logo AFEC" class="logo" />
     <h1>Décisions du Conseil</h1>
-    <p class="slogan">Historique des résolutions prises par l'AFEC</p>
+    <p class="slogan">Historique des décisions prises par le Conseil</p>
+  </header>
+
+<!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
     <nav>
       <ul>
         <li><a href="conseil_et_direction.html">Conseil & Direction</a></li>
       </ul>
     </nav>
-  </header>
+  </aside>
 
   <main>
     <section>
