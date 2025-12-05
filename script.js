@@ -40,6 +40,40 @@ async function chargerDecisions() {
 // Lancer le chargement des décisions uniquement si on est sur la page concernée
 document.addEventListener("DOMContentLoaded", chargerDecisions);
 
+// --- Chargement des décisions du Conseil ---
+async function chargerMembres() {
+  try {
+    const response = await fetch("membres.json");
+    const membres = await response.json();
+
+    // Trier par date (du plus récent au plus ancien)
+    membres.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    const container = document.getElementById("membres-container");
+    if (!container) return; // sécurité : ne fait rien si la page n'a pas ce conteneur
+
+    membres.forEach(membres => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+
+      card.innerHTML = `
+        <h3>${decision.id}</h3>
+        <p><strong>Date d'adhésion :</strong> ${decision.date}</p>
+        <p><strong>Lien :</strong> ${decision.lien}</p>
+      `;
+
+      container.appendChild(card);
+    });
+  } catch (error) {
+    console.error("Erreur lors du chargement des membres :", error);
+  }
+}
+
+// Lancer le chargement des décisions uniquement si on est sur la page concernée
+document.addEventListener("DOMContentLoaded", chargerMembres);
+
+
+
 // Sidebar
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
