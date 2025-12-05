@@ -62,77 +62,84 @@
     "propose": "VIOLET (voir ex_diplome)",
     "votes": "2 POUR (VIOLET, VON HELLMAN), 0 CONTRE, 3 ABSTENTION (MOUTARDE, ORCHIDÉE, SMITH)"
   },
-      <div class="card">
-        <h3>2025-12 · Dissolution de l'AFEC</h3>
-        <p><strong>Date :</strong> 24 septembre 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Voir les pièces jointes (dissolution ; ex_diplome)</p>
-        <p><strong>Votes :</strong> 0 POUR, 4 CONTRE (MOUTARDE, VON HELLMAN, ORCHIDÉE, SMITH), 1 ABSTENTION (VIOLET)</p>
-      </div>
-      <div class="card">
-        <h3>Modification du Conseil</h3>
-        <p><strong>Date :</strong> 27 mai 2025</p>
-        <p>Fin de mandat de D'ARTIFROID, élection de SMITH</p>
-      </div>
-      <div class="card">
-        <h3>Référemdum 2025-01 · Mise en place d'un règlement intérieur</h3>
-        <p><strong>Date :</strong> 13 février 2025</p>
-        <p>Voir pièce jointe (projetRI_1)</p>
-        <p><strong>Votes :</strong> 14 POUR, 0 CONTRE, 2 ABSTENTION (AZUR, ATKINSON)</p>
-      </div>
-      <div class="card">
-        <h3>2025-11 · Mise en place du projet "Règlement"</h3>
-        <p><strong>Date :</strong> 05 février 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Voir pièce jointe (projetRI_1)</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, MOUATRDE, VON HELLMAN, ORCHIDÉE, D'ARTIFROID), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
-      <div class="card">
-        <h3>2025-10 · Adhésion de Miss Scarlett</h3>
-        <p><strong>Date :</strong> 30 janvier 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, MOUTARDE. VON HELLMAN, D'ARTIFROID, ORCHIDÉE), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
-      <div class="card">
-        <h3>2025-09 · Projet de création d'une médaille de Secrétaire</h3>
-        <p><strong>Date :</strong> 07 janvier 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 4 POUR (VIOLET, ORCHIDÉE, MOUTARDE, D'ARTIFROID), 0 CONTRE, 1 ABSTENTION (VON HELLMAN)</p>
-      </div>
-      <div class="card">
-        <h3>2025-08 · Projet de suppression des noms de codes</h3>
-        <p><strong>Date :</strong> 07 janvier 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Doit-on envisager la suppression des noms de codes ? En vue d'un référendum</p>
-        <p><strong>Votes :</strong> 1 POUR (VIOLET), 4 CONTRE (ORCHIDÉE, MOUTARDE, VON HELLMAN, D'ARTIFROID), 0 ABSTENTION</p>
-      </div>
-      <div class="card">
-        <h3>2025-07 · Mise en place du projet "Contact"</h3>
-        <p><strong>Date :</strong> 06 janvier 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Nouvelle adresse en fonction du nouveau nom</p>
-        <p><strong>Votes :</strong> 4 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, VON HELLMAN), 0 CONTRE, 1 ABSTENTION (MOUTARDE)</p>
-      </div>
-      <div class="card">
-        <h3>2025-06 · Mise en place du projet "Devise"</h3>
-        <p><strong>Date :</strong> 06 janvier 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Nouvelle devise</p>
-        <p><strong>Votes :</strong> 4 ENQUÊTONS POUR LA JUSTICE (VIOLET, MOUTARDE, D'ARTIFROID, VON HELLMAN), 1 ÉTUDE ENQUÊTRICE (ORCHIDÉE), 0 AUCUNE</p>
-      </div>
-      <div class="card">
-        <h3>2025-05 · Préparation du projet "Contact"</h3>
-        <p><strong>Date :</strong> 05 janvier 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Nouvelle adresse email en fonction du nouveau nom</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, MOUTARDE, VON HELLMAN), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
-      <div class="card">
-        <h3>2025-04 · Préparation du projet "Devise"</h3>
-        <p><strong>Date :</strong> 05 janvier 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, MOUTARDE, VON HELLMAN), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
+  {
+    "id": "2025-12",
+    "titre": "Dissolution de l'AFEC",
+    "date": "2025-09-24",
+    "propose": "VIOLET (voir dissolution ; ex_diplome)",
+    "votes": "0 POUR, 4 CONTRE (MOUTARDE, VON HELLMAN, ORCHIDÉE, SMITH), 1 ABSTENTION (VIOLET)"
+  },
+  {
+    "id": "Élections Conseillères",
+    "titre": "Modification du Conseil",
+    "date": "2025-11-02",
+    "propose": "CONSEIL",
+    "votes": "Fin de mandat de D'ARTIFROID, élection de SMITH"
+  },
+  {
+    "id": "Référendum 2025-01",
+    "titre": "Mise en place d'un règlement intérieur",
+    "date": "2025-02-13",
+    "propose": "CONSEIL (voir projetRI_1)",
+    "votes": "14 POUR, 0 CONTRE, 2 ABSTENTION (AZUR, ATKINSON)"
+  },
+  {
+    "id": "2025-11",
+    "titre": "Mise en place du projet 'Règlement'",
+    "date": "2025-02-05",
+    "propose": "VIOLET (voir projetRI_1)",
+    "votes": "5 POUR (VIOLET, MOUTARDE, VON HELLMAN, ORCHIDÉE, D'ARTIFROID), 0 CONTRE, 0 ABSTENTION"
+  },
+  {
+    "id": "2025-10",
+    "titre": "Adhésion de Miss Scarlett",
+    "date": "2025-01-30",
+    "propose": "VIOLET",
+    "votes": "5 POUR (VIOLET, MOUTARDE, VON HELLMAN, D'ARTIFROID, ORCHIDÉE), 0 CONTRE, 0 ABSTENTION"
+  },
+  {
+    "id": "2025-09",
+    "titre": "Projet de création d'une médaille de Secrétaire",
+    "date": "2025-01-07",
+    "propose": "VIOLET",
+    "votes": "4 POUR (VIOLET, ORCHIDÉE, MOUTARDE, D'ARTIFROID), 0 CONTRE, 1 ABSTENTION (VON HELLMAN)"
+  },
+  {
+    "id": "2025-08",
+    "titre": "Projet de suppression des noms de codes",
+    "date": "2025-01-07",
+    "propose": "VIOLET (Doit-on envisager la suppression des noms de codes ? En vue d'un référendum)"",
+    "votes": "1 POUR (VIOLET), 4 CONTRE (ORCHIDÉE, MOUTARDE, VON HELLMAN, D'ARTIFROID), 0 ABSTENTION"
+  },
+  {
+    "id": "2025-07",
+    "titre": "Mise en place du projet 'Contact'",
+    "date": "2025-01-06",
+    "propose": "VIOLET (Nouvelle adresse en fonction du nouveau nom",
+    "votes": "4 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, VON HELLMAN), 0 CONTRE, 1 ABSTENTION (MOUTARDE)"
+  },
+  {
+    "id": "2025-06",
+    "titre": "Mise en place du projet 'Devise'",
+    "date": "2025-01-06",
+    "propose": "VIOLET (Nouvelle devise)",
+    "votes": "4 ENQUÊTONS POUR LA JUSTICE (VIOLET, MOUTARDE, D'ARTIFROID, VON HELLMAN), 1 ÉTUDE ENQUÊTRICE (ORCHIDÉE), 0 AUCUNE"
+  },
+  {
+    "id": "2025-05",
+    "titre": "Préparation du projet 'Contact'",
+    "date": "2025-01-05",
+    "propose": "VIOLET (Nouvelle adresse email en fonction du nouveau nom",
+    "votes": "5 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, MOUTARDE, VON HELLMAN), 0 CONTRE, 0 ABSTENTION"
+  },
+  {
+    "id": "2025-04",
+    "titre": "Préparation du projet 'Devise'",
+    "date": "2025-01-05",
+    "propose": "VIOLET",
+    "votes": "5 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, MOUTARDE, VON HELLMAN), 0 CONTRE, 0 ABSTENTION"
+  },
+  
       <div class="card">
         <h3>2025-03 · Mise en place du projet "Nouveau logo"</h3>
         <p><strong>Date :</strong> 04 janvier 2025</p>
