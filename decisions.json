@@ -209,29 +209,32 @@
     "propose": "VIOLET (Volonté de changement de logo pour le club dans un objectif plus représentatif)",
     "votes": "5 POUR (VIOLET, MOUTARDE, VON HELLMAN, ORCHIDÉE, D'ARTIFROID), 0 CONTRE, 0 ABSTENTION"
   },
-  
-      <div class="card">
-        <h3>2024-03 · Préparation du projet "Nouveau nom"</h3>
-        <p><strong>Date :</strong> 08 juin 2024</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, VON HELLMAN, ORCHIDÉE, D'ARTIFROID, MOUTARDE), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
-      <div class="card">
-        <h3>2024-02 · Expulsion des membres du Régiment Inactif et sa dissolution</h3>
-        <p><strong>Date :</strong> 07 juin 2024</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Chef(s) d'accusation(s) : INACTIVITÉ, IRRESPECT DU POSTE
-        <p><strong>Votes :</strong> 4 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, VON HELLMAN), 0 CONTRE, 1 ABSTENTION (MOUTARDE)</p>
-      </div>
-      <div class="card">
-        <h3>2024-01 · Adhésion de Monsieur HAMILTON</h3>
-        <p><strong>Date :</strong> 06 juin 2024</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p><strong>Votes :</strong> 2 POUR (VIOLET, D'ARTIFROID), 0 CONTRE, 3 ABSTENTION (ORCHIDÉE, MOUTARDE, VON HELLMAN)</p>
-      </div>
-      <div class="card">
-        <h3>Modification du Conseil</h3>
-        <p><strong>Date :</strong> 05 juin 2024-06 juin 2024</p>
-        <p>Création du Conseil, nominations de VIOLET, MOUTARDE & VON HELLMAN, élections de ORCHIDÉE & D'ARTIFROID</p>
-      </div>
+  {
+    "id": "2024-03",
+    "titre": "Préparation du projet 'Nouveau nom'",
+    "date": "2024-06-08",
+    "propose": "VIOLET",
+    "votes": "5 POUR (VIOLET, VON HELLMAN, ORCHIDÉE, D'ARTIFROID, MOUTARDE), 0 CONTRE, 0 ABSTENTION"
+  },
+  {
+    "id": "2024-02",
+    "titre": "Expilsion des membres du Régiment Inactif et sa dissolution",
+    "date": "2024-06-07",
+    "propose": "VIOLET (Chef(s) d'accusation(s) : INACTIVITÉ, IRRESPECT DU POSTE)",
+    "votes": "4 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, VON HELLMAN), 0 CONTRE, 1 ABSTENTION (MOUTARDE)"
+  },
+  {
+    "id": "2024-01",
+    "titre": "Adhésion de Monsieur Hamilton",
+    "date": "2024-06-06",
+    "propose": "VIOLET",
+    "votes": "2 POUR (VIOLET, D'ARTIFROID), 0 CONTRE, 3 ABSTENTION (ORCHIDÉE, MOUTARDE, VON HELLMAN)"
+  },
+  {
+    "id": "Élections conseillères",
+    "titre": "Modification du Conseil",
+    "date": "2024-06-06",
+    "propose": "CONSEIL (Premier tour le 05 juin, second tour le 06 juin)",
+    "votes": "Création du Conseil, nominations de VIOLET, MOUTARDE & VON HELLMAN, élections de ORCHIDÉE & D'ARTIFROID"
+  }
 ]
