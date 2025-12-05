@@ -139,26 +139,25 @@
     "propose": "VIOLET",
     "votes": "5 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, MOUTARDE, VON HELLMAN), 0 CONTRE, 0 ABSTENTION"
   },
-  
-      <div class="card">
-        <h3>2025-03 · Mise en place du projet "Nouveau logo"</h3>
-        <p><strong>Date :</strong> 04 janvier 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Voir pièce jointe (projetlogo_4janvier2025)
-        <p><strong>Votes :</strong> 2 LOGO1 (MOUTARDE, D'ARTIFROID), 3 LOGO2 (VIOLET, VON HELLMAN, ORCHIDÉE), 0 ANCIENLOGO</p>
-      </div>
-      <div class="card">
-        <h3>2025-02 · Mise en place du projet "Nouveau nom"</h3>
-        <p><strong>Date :</strong> 03 janvier 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Passage de HOLMES à AFGCDE (Agence Française de Gestion de Crimes, Délits et d'Enquête), AFEC (Association Française d'Enquête Criminelle), OFE (Organisation Française des Enquêteurs), OFE (Organisation Française d'Enquête), OEF (Organisme des Enquêteurs de France), OEHS (Organisation des Enquêteurs de Haute-Savoie), HOLMES</p>
-        <p><strong>Votes :</strong> 1 AFGCDE (D'ARTIFROID), 3 AFEC (MOUTARDE, ORCHIDÉE, VIOLET), 0 OFE(1), 0 OFE(2), 0 OEF, 0 OEHS, 1 HOLMES (VON HELLMAN)</p>
-      </div>
-      <div class="card">
-        <h3>2025-01 · Préparation du projet "Site"</h3>
-        <p><strong>Date :</strong> 02 janvier 2025</p>
-        <p><strong>Proposé par :</strong> VIOLET</p>
-        <p>Volonté de création d'un site pour le club</p>
-        <p><strong>Votes :</strong> 5 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, MOUTARDE, VON HELLMAN), 0 CONTRE, 0 ABSTENTION</p>
-      </div>
+  {
+    "id": "2025-03",
+    "titre": "Mise en place du projet 'Nouveau logo'",
+    "date": "2025-01-04",
+    "propose": "VIOLET (projetlogo_4janvier2025)",
+    "votes": "2 LOGO1 (MOUTARDE, D'ARTIFROID), 3 LOGO2 (VIOLET, VON HELLMAN, ORCHIDÉE), 0 ANCIENLOGO"
+  },
+  {
+    "id": "2025-02",
+    "titre": "Mise en place du projet 'Nouveau nom'",
+    "date": "2025-01-03",
+    "propose": "VIOLET (Passage de HOLMES à AFGCDE (Agence Française de Gestion de Crimes, Délits et d'Enquête), AFEC (Association Française d'Enquête Criminelle), OFE (Organisation Française des Enquêteurs), OFE (Organisation Française d'Enquête), OEF (Organisme des Enquêteurs de France), OEHS (Organisation des Enquêteurs de Haute-Savoie), HOLMES)",
+    "votes": "1 AFGCDE (D'ARTIFROID), 3 AFEC (MOUTARDE, ORCHIDÉE, VIOLET), 0 OFE(1), 0 OFE(2), 0 OEF, 0 OEHS, 1 HOLMES (VON HELLMAN)"
+  },
+  {
+    "id": "2025-01",
+    "titre": "Préparation du projet 'Site'",
+    "date": "2025-01-02",
+    "propose": "VIOLET (Volonté de création d'un site pour le club",
+    "votes": "5 POUR (VIOLET, D'ARTIFROID, ORCHIDÉE, MOUTARDE, VON HELLMAN), 0 CONTRE, 0 ABSTENTION"
+  }
 ]
