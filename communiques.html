@@ -8,15 +8,21 @@
 </head>
 <body>
   <header>
+    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
     <img src="images/directeur.png" alt="Logo AFEC" class="logo" />
     <h1>Communiqués du Directeur</h1>
+  </header>
+
+<!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
     <nav>
       <ul>
         <li><a href="conseil_et_direction.html">Conseil & Direction</a></li>
       </ul>
     </nav>
-  </header>
-
+  </aside>
+  
   <main>
     <section>
       <h2>Liste des Communiqués</h2>
