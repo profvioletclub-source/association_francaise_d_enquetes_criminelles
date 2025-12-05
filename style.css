@@ -170,13 +170,17 @@ header {
 
 /* Bouton pour ouvrir le menu */
 .menu-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
   background: var(--rouge-profond, #8B0000);
   color: white;
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
   font-size: 1.2rem;
-  margin-top: 1rem;
+  z-index: 1100; /* au-dessus de la sidebar */
+  border-radius: 4px;
 }
 
 /* Bouton pour fermer la sidebar */
