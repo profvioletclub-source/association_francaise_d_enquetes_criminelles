@@ -101,32 +101,37 @@ async function chargerAmembres() {
 document.addEventListener("DOMContentLoaded", chargerAmembres);
 
 // --- Barre de recherche sur membres et anciens membres ---
-let allMembres = []; // contiendra la fusion des deux listes
+let membresData = [];
+let amembresData = [];
 
-async function chargerTousMembres() {
+async function chargerMembres() {
   try {
-    const [resMembres, resAmembres] = await Promise.all([
-      fetch("membres.json"),
-      fetch("amembres.json")
-    ]);
+    const response = await fetch("membres.json");
+    membresData = await response.json();
 
-    const membres = await resMembres.json();
-    const amembres = await resAmembres.json();
-
-    // Fusionner les deux listes
-    allMembres = [...membres, ...amembres];
-
-    // Trier par ordre alphabétique
-    allMembres.sort((a, b) => a.id.localeCompare(b.id));
-
-    afficherMembres(allMembres);
+    // Trier par nom
+    membresData.sort((a, b) => a.id.localeCompare(b.id));
+    afficherMembres(membresData, "membres-container");
   } catch (error) {
-    console.error("Erreur lors du chargement des membres et anciens membres :", error);
+    console.error("Erreur lors du chargement des membres :", error);
   }
 }
 
-function afficherMembres(liste) {
-  const container = document.getElementById("membres-container");
+async function chargerAmembres() {
+  try {
+    const response = await fetch("amembres.json");
+    amembresData = await response.json();
+
+    // Trier par nom
+    amembresData.sort((a, b) => a.id.localeCompare(b.id));
+    afficherMembres(amembresData, "amembres-container");
+  } catch (error) {
+    console.error("Erreur lors du chargement des anciens membres :", error);
+  }
+}
+
+function afficherMembres(liste, containerId) {
+  const container = document.getElementById(containerId);
   if (!container) return;
 
   container.innerHTML = ""; // vider avant réaffichage
@@ -143,21 +148,34 @@ function afficherMembres(liste) {
   });
 }
 
-// Initialisation : charger tous les membres et activer la recherche
+// --- Recherche ---
+function filtrerMembres(query) {
+  const queryLower = query.toLowerCase();
+
+  const filteredMembres = membresData.filter(m =>
+    m.id.toLowerCase().includes(queryLower)
+  );
+  afficherMembres(filteredMembres, "membres-container");
+
+  const filteredAmembres = amembresData.filter(m =>
+    m.id.toLowerCase().includes(queryLower)
+  );
+  afficherMembres(filteredAmembres, "amembres-container");
+}
+
+// Initialisation
 document.addEventListener("DOMContentLoaded", () => {
-  chargerTousMembres();
+  chargerMembres();
+  chargerAmembres();
 
   const searchBar = document.getElementById("search-bar");
   if (searchBar) {
     searchBar.addEventListener("input", (e) => {
-      const query = e.target.value.toLowerCase();
-      const filtered = allMembres.filter(m =>
-        m.id.toLowerCase().includes(query)
-      );
-      afficherMembres(filtered);
+      filtrerMembres(e.target.value);
     });
   }
 });
+
 
 // Sidebar
 function toggleSidebar() {
