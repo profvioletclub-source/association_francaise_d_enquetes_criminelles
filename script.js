@@ -182,3 +182,10 @@ function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
   sidebar.classList.toggle("open");
 }
+
+function toggleSousMenu(event) {
+  event.stopPropagation(); // empêche le clic de suivre le lien
+  const li = event.target.closest(".menu-deroulant");
+  li.classList.toggle("open");
+}
+
