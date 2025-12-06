@@ -68,10 +68,39 @@ async function chargerMembres() {
   }
 }
 
-// Lancer le chargement des décisions uniquement si on est sur la page concernée
+// Lancer le chargement des membres uniquement si on est sur la page concernée
 document.addEventListener("DOMContentLoaded", chargerMembres);
 
+// --- Chargement des membres ---
+async function chargerAmembres() {
+  try {
+    const response = await fetch("amembres.json");
+    const amembres = await response.json();
 
+    // Trier par date (du plus récent au plus ancien)
+    //membres.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    const container = document.getElementById("amembres-container");
+    if (!container) return; // sécurité : ne fait rien si la page n'a pas ce conteneur
+
+    amembres.forEach(amembre => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+
+      card.innerHTML = `
+        <h3>${amembre.id}</h3>
+        <p><strong>Lien :</strong> <a href=${amembre.lien}>Voir la fiche</a></p>
+      `;
+
+      container.appendChild(card);
+    });
+  } catch (error) {
+    console.error("Erreur lors du chargement des anciens membres :", error);
+  }
+}
+
+// Lancer le chargement des anciens membres uniquement si on est sur la page concernée
+document.addEventListener("DOMContentLoaded", chargerAmembres);
 
 // Sidebar
 function toggleSidebar() {
