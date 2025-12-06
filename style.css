@@ -204,24 +204,41 @@ footer {
 }
 
 /* Menu déroulant dans la sidebar */
+
 .menu-deroulant {
   position: relative;
 }
 
-.menu-deroulant .sous-menu {
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-principal {
+  flex-grow: 1;
+  text-decoration: none;
+  color: var(--gris-anthracite);
+  font-weight: bold;
+}
+
+.toggle-submenu {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--gris-anthracite);
+  padding: 0 0.5rem;
+}
+
+.sous-menu {
   display: none;
   flex-direction: column;
   margin-left: 1rem;
   margin-top: 0.5rem;
 }
 
-.menu-deroulant:hover .sous-menu {
+.menu-deroulant.open .sous-menu {
   display: flex;
-}
-
-.menu-deroulant .sous-menu li a {
-  font-weight: normal;
-  font-size: 0.95rem;
-  padding-left: 0.5rem;
 }
 
