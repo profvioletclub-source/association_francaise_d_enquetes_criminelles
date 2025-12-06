@@ -58,7 +58,7 @@ async function chargerMembres() {
 
       card.innerHTML = `
         <h3>${membre.id}</h3>
-        <p><strong>Lien :</strong> <a href=${membre.lien}>Voir la fiche</a></p>
+        <h3><a href=${membre.lien}>${membre.id}</a></h3>
       `;
 
       container.appendChild(card);
