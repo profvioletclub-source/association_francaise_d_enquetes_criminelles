@@ -185,12 +185,6 @@ function toggleSidebar() {
 
 function toggleSousMenu(event) {
   event.stopPropagation(); // empêche le clic de suivre le lien
-  const li = event.target.closest(".menu-deroulant");
-  li.classList.toggle("open");
-}
-
-function toggleSousMenu(event) {
-  event.stopPropagation(); // empêche le clic de suivre le lien
   event.preventDefault();  // empêche le bouton de recharger la page
 
   const li = event.target.closest(".menu-deroulant");
