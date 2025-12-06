@@ -5,6 +5,70 @@
   },
   {
     "id": "Docteur Orchidée",
-    "lien": "membres/fiche-dcorchidee.html"
+    "lien": "membres/fiche-drorchidee.html"
+  },
+  {
+    "id": "Colonel Moutarde",
+    "lien": "membres/fiche-clmoutarde.html"
+  },
+  {
+    "id": "Sergent Legris",
+    "lien": "membres/fiche-sgtlegris.html"
+  },
+  {
+    "id": "Prince Azur",
+    "lien": "membres/fiche-pcazur.html"
+  },
+  {
+    "id": "Monsieur Smith",
+    "lien": "membres/fiche-mrsmith.html"
+  },
+  {
+    "id": "Monsieur Myns",
+    "lien": "membres/fiche-mrmyns.html"
+  },
+  {
+    "id": "Lady Lavande",
+    "lien": "membres/fiche-ldlavande.html"
+  },
+  {
+    "id": "Vicomte d'Artifroid",
+    "lien": "membres/fiche-vcdartifroid.html"
+  },
+  {
+    "id": "Lieutenant Atkinson",
+    "lien": "membres/fiche-ltatkinson.html"
+  },
+  {
+    "id": "Baronne Von Hellman",
+    "lien": "membres/fiche-brvonhellman.html"
+  },
+  {
+    "id": "Baron Bloch",
+    "lien": "membres/fiche-brbloch.html"
+  },
+  {
+    "id": "Président Edelweiss",
+    "lien": "membres/fiche-clmoutarde.html"
+  },
+  {
+    "id": "Monsieur Basilic",
+    "lien": "membres/fiche-mrbasilic.html"
+  },
+  {
+    "id": "Dentiste Géranium",
+    "lien": "membres/fiche-dtgeranium.html"
+  },
+  {
+    "id": "Monsieur Marmelade",
+    "lien": "membres/fiche-mrmarmelade.html"
+  },
+  {
+    "id": "Abbé Banane",
+    "lien": "membres/fiche-abbanane.html"
+  },
+  {
+    "id": "Policière Pastèque",
+    "lien": "membres/fiche-pcpasteque.html"
   }
 ]
