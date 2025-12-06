@@ -100,6 +100,65 @@ async function chargerAmembres() {
 // Lancer le chargement des anciens membres uniquement si on est sur la page concernée
 document.addEventListener("DOMContentLoaded", chargerAmembres);
 
+// --- Barre de recherche sur membres et anciens membres ---
+let allMembres = []; // contiendra la fusion des deux listes
+
+async function chargerTousMembres() {
+  try {
+    const [resMembres, resAmembres] = await Promise.all([
+      fetch("membres.json"),
+      fetch("amembres.json")
+    ]);
+
+    const membres = await resMembres.json();
+    const amembres = await resAmembres.json();
+
+    // Fusionner les deux listes
+    allMembres = [...membres, ...amembres];
+
+    // Trier par ordre alphabétique
+    allMembres.sort((a, b) => a.id.localeCompare(b.id));
+
+    afficherMembres(allMembres);
+  } catch (error) {
+    console.error("Erreur lors du chargement des membres et anciens membres :", error);
+  }
+}
+
+function afficherMembres(liste) {
+  const container = document.getElementById("membres-container");
+  if (!container) return;
+
+  container.innerHTML = ""; // vider avant réaffichage
+
+  liste.forEach(membre => {
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    card.innerHTML = `
+      <h3><a href="${membre.lien}">${membre.id}</a></h3>
+    `;
+
+    container.appendChild(card);
+  });
+}
+
+// Initialisation : charger tous les membres et activer la recherche
+document.addEventListener("DOMContentLoaded", () => {
+  chargerTousMembres();
+
+  const searchBar = document.getElementById("search-bar");
+  if (searchBar) {
+    searchBar.addEventListener("input", (e) => {
+      const query = e.target.value.toLowerCase();
+      const filtered = allMembres.filter(m =>
+        m.id.toLowerCase().includes(query)
+      );
+      afficherMembres(filtered);
+    });
+  }
+});
+
 // Sidebar
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
