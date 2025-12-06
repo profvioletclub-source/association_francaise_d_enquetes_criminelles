@@ -231,7 +231,7 @@ footer {
   padding: 0 0.5rem;
 }
 
-.sous-menu {
+.menu-deroulant .sous-menu {
   display: none;
   flex-direction: column;
   margin-left: 1rem;
@@ -241,4 +241,3 @@ footer {
 .menu-deroulant.open .sous-menu {
   display: flex;
 }
-
