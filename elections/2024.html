@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFEC - Élections de 2024</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <button class="menu-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <img src="images/conseil.jpeg" alt="Logo AFEC" class="logo" />
+    <h1>Élections de 2024</h1>
+  </header>
 
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <nav>
+      <ul>
+        <li><a href="elections_nominations.html">Retour à la liste des Élections</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="infos">
+      <h2>Informations générales</h2>
+      <div class="card">
+        <p><strong>Date de l’élection :</strong> 26 mai 2025</p>
+        <p><strong>Type :</strong> Conseillers AFEC</p>
+        <p><strong>Description :</strong> Élection organisée par l’AFEC pour renouveler les conseillers et assurer la représentativité.</p>
+      </div>
+    </section>
+
+    <section id="candidats">
+      <h2>Liste des candidats</h2>
+      <ul>
+        <li>Candidat A</li>
+        <li>Candidat B</li>
+        <li>Candidat C</li>
+        <li>Candidat D</li>
+      </ul>
+    </section>
+
+    <section id="resultats">
+      <h2>Résultats</h2>
+      <div class="card">
+        <p><strong>Candidat A :</strong> 45% des voix</p>
+        <p><strong>Candidat B :</strong> 30% des voix</p>
+        <p><strong>Candidat C :</strong> 15% des voix</p>
+        <p><strong>Candidat D :</strong> 10% des voix</p>
+      </div>
+    </section>
+
+    <section id="notes">
+      <h2>Notes complémentaires</h2>
+      <p>Participation : 68%</p>
+      <p>Scrutin réalisé conformément aux statuts de l’AFEC.</p>
+      <p>Résultats validés par le Conseil de Direction.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AFEC - Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
