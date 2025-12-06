@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFEC - Élections de 2026</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <button class="menu-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <img src="../images/conseil.jpeg" alt="Logo AFEC" class="logo" />
+    <h1>Élections de 2026</h1>
+  </header>
 
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">×</button>
+    <nav>
+      <ul>
+        <li><a href="../elections_nominations.html">Retour à la liste des Élections</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="infos">
+      <h2>Organisation des Élections</h2>
+      <div class="card">
+        <p><strong>Date de l’élection :</strong> 26 mai 2024</p>
+        <p><strong>Votants :</strong> Membres du Club. Pas de vote du Directeur. Les candidats ont interditcion de voter pour eux-mêmes.</p>
+        <p><strong>Description :</strong> En cas d'égalité lors du seul tour, un vote bonus départagera les deux candidats. Si l'égalité persiste, les membres du conseils décideront de l'élu. Scrutin direct. Élection au Suffrage universel.</p>
+      </div>
+    </section>
+
+    <section id="candidats">
+      <h2>Liste des candidats</h2>
+      <ul>
+        <li>Baron Bloch, Secrétaire Général, Directeur du Bataillon A1</li>
+        <li>Docteur Orchidée, Directrice de la Section B, Conseillère sortante</li>
+      </ul>
+    </section>
+
+    <section id="resultats">
+      <h2>Résultats</h2>
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Nom du candidat</th>
+              <th>Résultat</th>
+              <th>Nombre de Voix</th>
+              <th>Élu / Non élu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Docteur Orchidée</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Baron Bloch</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AFEC - Tous droits réservés</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
