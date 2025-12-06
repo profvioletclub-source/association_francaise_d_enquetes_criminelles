@@ -262,3 +262,13 @@ th {
 tr:nth-child(even) {
   background-color: var(--blanc-casse);
 }
+
+.table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch; /* fluide sur mobile */
+}
+
+.table-wrapper table {
+  min-width: 600px; /* ou plus selon ton contenu */
+}
