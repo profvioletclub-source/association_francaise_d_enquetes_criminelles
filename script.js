@@ -46,8 +46,8 @@ async function chargerMembres() {
     const response = await fetch("membres.json");
     const membres = await response.json();
 
-    // Trier par date (du plus récent au plus ancien)
-    //membres.sort((a, b) => new Date(b.date) - new Date(a.date));
+    // Trier par nom
+    membres.sort((a, b) => a.id.localeCompare(b.id));
 
     const container = document.getElementById("membres-container");
     if (!container) return; // sécurité : ne fait rien si la page n'a pas ce conteneur
@@ -76,9 +76,9 @@ async function chargerAmembres() {
     const response = await fetch("amembres.json");
     const amembres = await response.json();
 
-    // Trier par date (du plus récent au plus ancien)
-    //membres.sort((a, b) => new Date(b.date) - new Date(a.date));
-
+    // Trier par nom
+    amembres.sort((a, b) => a.id.localeCompare(b.id));
+    
     const container = document.getElementById("amembres-container");
     if (!container) return; // sécurité : ne fait rien si la page n'a pas ce conteneur
 
