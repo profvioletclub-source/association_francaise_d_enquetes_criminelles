@@ -330,27 +330,3 @@ body {
   margin-top: 1rem;
   color: var(--gris-anthracite);
 }
-
-/* --- Détails des postes --- */
-.infobox ul li strong {
-  color: var(--rouge-profond);
-}
-
-.infobox-section {
-  background-color: var(--bleu-onu);
-  font-weight: bold;
-  padding: 0.4rem;
-  margin-top: 0.8rem;
-  border-left: 4px solid var(--rouge-profond);
-  text-transform: uppercase;
-}
-
-.infobox ul {
-  list-style-type: none;
-  padding-left: 0.8rem;
-  margin: 0.4rem 0;
-}
-
-.infobox li {
-  margin-bottom: 0.3rem;
-}
