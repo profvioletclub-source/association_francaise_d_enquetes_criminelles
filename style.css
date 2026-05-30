@@ -329,3 +329,43 @@ tr:nth-child(even) {
   background-color: var(--violet-pastel);
 }
   
+/* Bloc d'un poste dans l'infobox */
+.poste {
+  border-top: 1px solid var(--gris-anthracite);
+  padding: 0.6rem 0.8rem;
+}
+
+/* Nom de la fonction centré */
+.poste-titre {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+/* Dates centrées juste en dessous */
+.poste-dates {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+
+/* Lignes Directeur / Prédécesseur / Successeur */
+.poste-ligne {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 0.15rem 0;
+}
+
+.poste-ligne span {
+  font-weight: bold;
+}
+
+.poste-ligne a {
+  color: var(--rouge-profond);
+  text-decoration: none;
+}
+
+.poste-ligne a:hover {
+  text-decoration: underline;
+}
