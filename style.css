@@ -304,7 +304,7 @@ tr:nth-child(even) {
 }
 
 .infobox-section {
-  background-color: var(--bleu-onu);
+  background-color: var(--rouge-profond);
   font-weight: bold;
   padding: 0.4rem 0.6rem;
   border-top: 1px solid var(--gris-anthracite);
