@@ -6,32 +6,51 @@
   <title>Fiche membre - Professeur Violet</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
-<body>
-  <header>
-    <div class="logo-container">
-      <img src="../images/conseil.jpeg" alt="Logo Conseil" class="logo" />
-      <img src="../images/directeur.png" alt="Logo Directeur" class="logo" />
-    </div>
-    <h1>Professeur Violet</h1>
-    <nav>
-      <ul>
-        <li><a href="../membres.html">← Retour à la liste</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  
+<body class="page-fiche">
   <main>
-    <section>
-      <h2>Profil</h2>
-      <ul>
-        <li>🧑‍💼 Fonction(s) : Directeur (depuis 2019), Conseiller Général (depuis 2024), Cofondateur</li>
-        <li>📅 Membre depuis : février 2019</li>
-      </ul>
-    </section>
-  </main>
+    <div class="infobox">
+      <div class="infobox-title">
+        <img src="../images/conseil.jpeg" alt="Conseil AFEC" class="infobox-logo" />
+        <img src="../images/directeur.png" alt="Directeur AFEC" class="infonox-logo" />
+        <div class="infobox-nom">Professeur Violet</div>
+        <a class="infobox-retour" href="../membres.html">← Retour à la liste</a>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 AFEC - Tous droits réservés</p>
-  </footer>
+      
+      <div class="infobox-section">Fonctions</div>
+      <!-- Poste 1 -->
+      <div class="poste">
+        <div class="poste-titre">Directeur de l'AFEC</div>
+        <div class="poste-dates">En poste depuis février 2019</div>
+        <div class="poste-ligne">
+          <span>Prédécesseur :</span>
+          <a href="../amembres/fiche-mmepervenche.html">Madame Pervenche (1 jour)</a>
+        </div>
+      </div>
+
+      <!-- Poste 2 -->
+      <div class="poste">
+        <div class="poste-titre">Conseiller Général</div>
+        <div class="poste-dates">En poste depuis le 06 juin 2024</div>
+        <div class="poste-ligne">
+          <span>Directeur :</span>
+          <a href="#">Lui-même</a>
+        </div>
+        <div class="poste-ligne">
+          <span>Prédécesseur :</span>
+          <a href="#">Poste créé</a>
+        </div>
+      </div>
+
+      <div class="infobox-section">Adhésion</div>
+      <ul>
+        <li><strong>Membre depuis :</strong> février 2019</li>
+        <li>Cofondateur</li>
+      </ul>
+
+      <div class="infobox-footer">© 2025 AFEC — Tous droits réservés</div>
+    </div>
+  </main>
 </body>
 </html>
