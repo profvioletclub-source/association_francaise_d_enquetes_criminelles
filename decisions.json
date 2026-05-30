@@ -1,5 +1,12 @@
 [
   {
+    "id": "Élections Conseillères",
+    "titre": "Modification du Conseil",
+    "date": "2026-05-30",
+    "propose": "CONSEIL",
+    "votes": "Fin de mandat de ORCHIDÉE, élection de ??"
+  },
+  {
     "id": "2025-21",
     "titre": "Adhésion de la Policière Pastèque",
     "date": "2025-12-01",
@@ -72,7 +79,7 @@
   {
     "id": "Élections Conseillères",
     "titre": "Modification du Conseil",
-    "date": "2025-11-02",
+    "date": "2025-05-27",
     "propose": "CONSEIL",
     "votes": "Fin de mandat de D'ARTIFROID, élection de SMITH"
   },
