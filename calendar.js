@@ -1,6 +1,5 @@
 const calendar = document.getElementById("calendar");
 const details = document.getElementById("event-details");
-
 let current = new Date();
 
 function renderCalendar() {
@@ -24,12 +23,15 @@ function renderCalendar() {
   const grid = document.createElement("div");
   grid.className = "cal-grid";
 
-  for (let i = 1; i < (firstDay === 0 ? 7 : firstDay); i++) {
+  // Décalage du premier jour
+  const offset = (firstDay === 0 ? 6 : firstDay - 1);
+  for (let i = 0; i < offset; i++) {
     grid.innerHTML += `<div></div>`;
   }
 
+  // Ajout des jours
   for (let d = 1; d <= daysInMonth; d++) {
-    const dateStr = `${year}-${String(month+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`;
+    const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
     const hasEvent = events.some(ev => ev.date === dateStr);
 
     grid.innerHTML += `
@@ -44,15 +46,9 @@ function renderCalendar() {
 
 function showEvents(dateStr) {
   const list = events.filter(ev => ev.date === dateStr);
-
-  if (list.length === 0) {
-    details.innerHTML = "<p>Aucun événement ce jour.</p>";
-    return;
-  }
-
-  details.innerHTML = list.map(ev =>
-    `<p><strong>${new Date(ev.date).toLocaleDateString("fr-FR")}</strong> — ${ev.title}</p>`
-  ).join("");
+  details.innerHTML = list.length
+    ? list.map(ev => `<p><strong>${new Date(ev.date).toLocaleDateString("fr-FR")}</strong> — ${ev.title}</p>`).join("")
+    : "<p>Aucun événement ce jour.</p>";
 }
 
 function prevMonth() {
