@@ -478,3 +478,13 @@ tr:nth-child(even) {
 .legende-rouge {
   background: var(--rouge-profond);
 }
+
+.mix-day {
+  background: linear-gradient(
+    to bottom,
+    var(--violet-pastel) 50%,
+    var(--rouge-profond) 50%
+  );
+  color: white;
+  font-weight: bold;
+}
