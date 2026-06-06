@@ -218,7 +218,7 @@ function afficherTroisEvenements() {
   // Filtrer les événements futurs
   const futurs = events.filter(ev => {
     const d = new Date(ev.date);
-    d.setHours(0, 0, 0, 0);
+    d.setHours(0, 0, 0, 0); // ← LIGNE QUI MANQUAIT
     return d >= today;
   });
 
