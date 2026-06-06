@@ -1,9 +1,9 @@
 [
-  { "date": "2026-05-30", "title": "Élections conseillères - Fin de mandat de Docteur Orchidée" },
-  { "date": "2026-07-01", "title": "Fin de la Deuxième Session Conseillère 2026" },
-  { "date": "2026-09-01", "title": "Début de la Troisième Session Conseillère 2026" },
-  { "date": "2026-09-15", "title": "Limite de dépot du planning 2027 par le Directeur" },
-  { "date": "2026-12-23", "title": "Fin de la Troisième Session Conseillère 2026" },
-  { "date": "2027-01-04", "title": "Début de la Première Session Conseillère 2027" },
-  { "date": "2027-05-15", "title": "Élections conseillères - Fin de mandat de Monsieur Smith" }
+  { "date": "2026-05-30", "title": "Élections conseillères - Fin de mandat de Docteur Orchidée", "subtitle":"Réélection du Docteur Orchidée" },
+  { "date": "2026-07-01", "title": "Fin de la Deuxième Session Conseillère 2026", "subtitle":"" },
+  { "date": "2026-09-01", "title": "Début de la Troisième Session Conseillère 2026", "subtitle":"" },
+  { "date": "2026-09-15", "title": "Limite de dépot du planning 2027 par le Directeur", "subtitle":"" },
+  { "date": "2026-12-23", "title": "Fin de la Troisième Session Conseillère 2026", "subtitle":"" },
+  { "date": "2027-01-04", "title": "Début de la Première Session Conseillère 2027", "subtitle":"" },
+  { "date": "2027-05-15", "title": "Élections conseillères - Fin de mandat de Monsieur Smith", "subtitle":"Date fixée par le planning 2027" }
 ]
