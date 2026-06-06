@@ -199,16 +199,25 @@ function toggleSousMenu(event) {
 //EVENEMENT PHASE DE TEST
 function afficherTroisEvenements() {
   const container = document.getElementById("event-list");
+  if (!container) return;
 
+  // Tri des événements par date
   const sorted = events.sort((a, b) => new Date(a.date) - new Date(b.date));
   const prochains = sorted.slice(0, 3);
 
+  // Nettoyage avant ajout
+  container.innerHTML = "";
+
+  // Affichage
   prochains.forEach(ev => {
     const card = document.createElement("div");
     card.className = "card";
-    card.innerHTML = `<h3>${new Date(ev.date).toLocaleDateString("fr-FR")} : ${ev.title}</h3>`;
+    card.innerHTML = `
+      <h3>${new Date(ev.date).toLocaleDateString("fr-FR", { day: "2-digit", month: "long", year: "numeric" })}</h3>
+      <p>${ev.title}</p>
+    `;
     container.appendChild(card);
   });
 }
 
-afficherTroisEvenements();
+document.addEventListener("DOMContentLoaded", afficherTroisEvenements);
