@@ -22,7 +22,7 @@ function renderCalendar() {
   
   const grid = document.createElement("div");
   grid.className = "cal-grid";
-
+  
   // Décalage du premier jour
   const offset = (firstDay === 0 ? 6 : firstDay - 1);
   for (let i = 0; i < offset; i++) {
