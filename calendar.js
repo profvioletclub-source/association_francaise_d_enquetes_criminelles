@@ -19,7 +19,7 @@ function renderCalendar() {
       <div>Lun</div><div>Mar</div><div>Mer</div><div>Jeu</div><div>Ven</div><div>Sam</div><div>Dim</div>
     </div>
   `;
-
+  
   const grid = document.createElement("div");
   grid.className = "cal-grid";
 
