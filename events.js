@@ -1,0 +1,8 @@
+const events = [
+  { date: "2026-07-01", title: "Fin de la Deuxième Session Conseillère 2026" },
+  { date: "2026-09-01", title: "Début de la Troisième Session Conseillère 2026" },
+  { date: "2026-09-15", title: "Limite de dépot du planning 2027 par le Directeur" },
+  { date: "2026-12-23", title: "Fin de la Troisième Session Conseillère 2026" },
+  { date: "2027-01-04", title: "Début de la Première Session Conseillère 2027" },
+  { date: "2027-05-15", title: "Élections conseillères" }
+];
