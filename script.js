@@ -195,14 +195,17 @@ function toggleSousMenu(event) {
   btn.textContent = li.classList.contains("open") ? "▾" : "▸";
 }
 
-
-//EVENEMENT PHASE DE TEST
+// --- ÉVÉNEMENTS (3 prochains) ---
 let events = [];
 
 async function chargerEvenements() {
-  const response = await fetch("events.json");
-  events = await response.json();
-  afficherTroisEvenements();
+  try {
+    const response = await fetch("events.json"); // PAS DE VERSION
+    events = await response.json();
+    afficherTroisEvenements();
+  } catch (error) {
+    console.error("Erreur lors du chargement des événements :", error);
+  }
 }
 
 function afficherTroisEvenements() {
@@ -210,15 +213,19 @@ function afficherTroisEvenements() {
   if (!container) return;
 
   const today = new Date();
-  today.setHours(0, 0, 0, 0); // éviter les problèmes d'heure
+  today.setHours(0, 0, 0, 0);
 
-  // 1. Filtrer les événements futurs ou du jour
-  const futurs = events.filter(ev => new Date(ev.date) >= today);
+  // Filtrer les événements futurs
+  const futurs = events.filter(ev => {
+    const d = new Date(ev.date);
+    d.setHours(0, 0, 0, 0);
+    return d >= today;
+  });
 
-  // 2. Trier par date
+  // Trier
   const sorted = futurs.sort((a, b) => new Date(a.date) - new Date(b.date));
 
-  // 3. Prendre les 3 prochains
+  // Prendre les 3 prochains
   const prochains = sorted.slice(0, 3);
 
   container.innerHTML = "";
@@ -233,3 +240,6 @@ function afficherTroisEvenements() {
     container.appendChild(card);
   });
 }
+
+// IMPORTANT : appeler la fonction
+document.addEventListener("DOMContentLoaded", chargerEvenements);
