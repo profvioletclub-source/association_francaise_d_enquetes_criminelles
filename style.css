@@ -438,6 +438,6 @@ tr:nth-child(even) {
 }
 
 .event-day {
-  background: #ffcc66;
+  background: var(--violet-pastel);
   font-weight: bold;
 }
