@@ -100,7 +100,7 @@ function showEvents(dateStr) {
   if (decs.length > 0) {
     html += "<h3>Décisions du Conseil</h3>";
     html += decs.map(dec =>
-      `<p><strong>${new Date(dec.date).toLocaleDateString("fr-FR")}</strong> — ${dec.id} - ${dec.titre}</p>`
+      `<p><strong>${new Date(dec.date).toLocaleDateString("fr-FR")}</strong> — ${dec.id} – ${dec.titre}</p>`
     ).join("");
   }
 
