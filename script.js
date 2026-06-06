@@ -200,7 +200,7 @@ function toggleSousMenu(event) {
 let events = [];
 
 async function chargerEvenements() {
-  const response = await fetch("events.json?v=1");
+  const response = await fetch("events.json");
   events = await response.json();
   afficherTroisEvenements();
 }
