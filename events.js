@@ -1,5 +1,6 @@
 const events = [
   { date: "2026-05-30", title: "Élections conseillères - Fin de mandat de Docteur Orchidée" },
+  { date: "2026-06-07", title: "Test-Test"},
   { date: "2026-07-01", title: "Fin de la Deuxième Session Conseillère 2026" },
   { date: "2026-09-01", title: "Début de la Troisième Session Conseillère 2026" },
   { date: "2026-09-15", title: "Limite de dépot du planning 2027 par le Directeur" },
