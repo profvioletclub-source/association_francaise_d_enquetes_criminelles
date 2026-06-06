@@ -1,7 +1,25 @@
 const calendar = document.getElementById("calendar");
 const details = document.getElementById("event-details");
-let current = new Date();
 
+let current = new Date();
+let events = []; // sera rempli depuis events.json
+
+// -----------------------------
+// 1. Charger les événements JSON
+// -----------------------------
+async function chargerEvenementsCalendrier() {
+  try {
+    const response = await fetch("events.json?v=1"); // change v=1 si tu modifies le JSON
+    events = await response.json();
+    renderCalendar();
+  } catch (error) {
+    console.error("Erreur lors du chargement des événements :", error);
+  }
+}
+
+// -----------------------------
+// 2. Affichage du calendrier
+// -----------------------------
 function renderCalendar() {
   const year = current.getFullYear();
   const month = current.getMonth();
@@ -19,10 +37,10 @@ function renderCalendar() {
       <div>Lun</div><div>Mar</div><div>Mer</div><div>Jeu</div><div>Ven</div><div>Sam</div><div>Dim</div>
     </div>
   `;
-  
+
   const grid = document.createElement("div");
   grid.className = "cal-grid";
-  
+
   // Décalage du premier jour
   const offset = (firstDay === 0 ? 6 : firstDay - 1);
   for (let i = 0; i < offset; i++) {
@@ -44,13 +62,20 @@ function renderCalendar() {
   calendar.appendChild(grid);
 }
 
+// -----------------------------
+// 3. Affichage des événements du jour
+// -----------------------------
 function showEvents(dateStr) {
   const list = events.filter(ev => ev.date === dateStr);
+
   details.innerHTML = list.length
     ? list.map(ev => `<p><strong>${new Date(ev.date).toLocaleDateString("fr-FR")}</strong> — ${ev.title}</p>`).join("")
     : "<p>Aucun événement ce jour.</p>";
 }
 
+// -----------------------------
+// 4. Navigation mois précédent / suivant
+// -----------------------------
 function prevMonth() {
   current.setMonth(current.getMonth() - 1);
   renderCalendar();
@@ -61,4 +86,7 @@ function nextMonth() {
   renderCalendar();
 }
 
-renderCalendar();
+// -----------------------------
+// 5. Lancer le chargement
+// -----------------------------
+chargerEvenementsCalendrier();
