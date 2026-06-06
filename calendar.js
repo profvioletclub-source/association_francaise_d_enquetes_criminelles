@@ -95,7 +95,7 @@ function showEvents(dateStr) {
   if (evts.length > 0) {
     html += "<h3>Événements</h3>";
     html += evts.map(ev =>
-      `<p><strong>${new Date(ev.date).toLocaleDateString("fr-FR")}</strong> — ${ev.title} ${ev.subtitle} ${ev.link}</p>`
+      `<p><strong>${new Date(ev.date).toLocaleDateString("fr-FR")}</strong> — ${ev.title} ${ev.subtitle}</p>`
     ).join("");
   }
 
