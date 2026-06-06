@@ -194,3 +194,21 @@ function toggleSousMenu(event) {
   const btn = li.querySelector(".toggle-submenu");
   btn.textContent = li.classList.contains("open") ? "▾" : "▸";
 }
+
+
+//EVENEMENT PHASE DE TEST
+function afficherTroisEvenements() {
+  const container = document.getElementById("event-list");
+
+  const sorted = events.sort((a, b) => new Date(a.date) - new Date(b.date));
+  const prochains = sorted.slice(0, 3);
+
+  prochains.forEach(ev => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `<h3>${new Date(ev.date).toLocaleDateString("fr-FR")} : ${ev.title}</h3>`;
+    container.appendChild(card);
+  });
+}
+
+afficherTroisEvenements();
