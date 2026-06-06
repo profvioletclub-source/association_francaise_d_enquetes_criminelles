@@ -8,13 +8,18 @@ let decisions = [];
 // -----------------------------
 // 1. Charger les événements JSON
 // -----------------------------
+
 async function chargerEvenementsCalendrier() {
   try {
-    const response = await fetch("events.json");
-    events = await response.json();
+    const responseEvents = await fetch("events.json");
+    events = await responseEvents.json();
+
+    const responseDecisions = await fetch("decisions.json");
+    decisions = await responseDecisions.json();
+
     renderCalendar();
   } catch (error) {
-    console.error("Erreur lors du chargement des événements :", error);
+    console.error("Erreur lors du chargement :", error);
   }
 }
 
