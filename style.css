@@ -407,6 +407,16 @@ tr:nth-child(even) {
 
 
 /*TEST-CALENDRIER*/
+.cal-header button {
+  background: #800000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 .cal-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
