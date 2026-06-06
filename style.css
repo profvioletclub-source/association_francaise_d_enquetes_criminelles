@@ -452,6 +452,6 @@ tr:nth-child(even) {
 }
 
 .event-day {
-  background: var(--blanc-casse);
-  font-weight: var(--violet-pastel);
+  background: var(--violet-pastel);
+  font-weight: var(--rouge-profond);
 }
