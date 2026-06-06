@@ -1,6 +1,7 @@
 [
   {
     "id": "Professeur Violet",
+    "nm": "Anthony RAVE",
     "lien": "membres/fiche-pfviolet.html"
   },
   {
@@ -45,6 +46,7 @@
   },
   {
     "id": "Baron Bloch",
+    "nm": "Matéo DOSTERT",
     "lien": "membres/fiche-brbloch.html"
   },
   {
