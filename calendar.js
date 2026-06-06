@@ -54,16 +54,28 @@ function renderCalendar() {
   }
 
   // Ajout des jours
+
   for (let d = 1; d <= daysInMonth; d++) {
     const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+
     const hasEvent = events.some(ev => ev.date === dateStr);
+    const hasDecision = decisions.some(dec => dec.date === dateStr);
+
+    let cssClass = "day";
+
+    if (hasDecision) {
+      cssClass += " decision-day"; // priorité au rouge
+    } else if (hasEvent) {
+      cssClass += " event-day";
+    }
 
     grid.innerHTML += `
-      <div class="day ${hasEvent ? "event-day" : ""}" onclick="showEvents('${dateStr}')">
+      <div class="${cssClass}" onclick="showEvents('${dateStr}')">
         ${d}
       </div>
     `;
   }
+
 
   calendar.appendChild(grid);
 }
