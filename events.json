@@ -1,4 +1,4 @@
-const events = [
+[
   { date: "2026-05-30", title: "Élections conseillères - Fin de mandat de Docteur Orchidée" },
   { date: "2026-06-07", title: "Test-Test"},
   { date: "2026-07-01", title: "Fin de la Deuxième Session Conseillère 2026" },
@@ -7,4 +7,4 @@ const events = [
   { date: "2026-12-23", title: "Fin de la Troisième Session Conseillère 2026" },
   { date: "2027-01-04", title: "Début de la Première Session Conseillère 2027" },
   { date: "2027-05-15", title: "Élections conseillères - Fin de mandat de Monsieur Smith" }
-];
+]
