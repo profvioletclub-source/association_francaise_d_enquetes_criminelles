@@ -417,6 +417,11 @@ tr:nth-child(even) {
   border-radius: 4px;
 }
 
+#calendar {
+  max-width: 600px;
+  margin: auto;
+}
+
 .cal-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
