@@ -455,3 +455,9 @@ tr:nth-child(even) {
   background: var(--violet-pastel);
   font-weight: var(--rouge-profond);
 }
+
+.decision-day {
+  background: var(--rouge-profond);
+  color: white;
+  font-weight: bold;
+}
