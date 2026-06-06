@@ -3,6 +3,7 @@ const details = document.getElementById("event-details");
 
 let current = new Date();
 let events = []; // sera rempli depuis events.json
+let decisions = [];
 
 // -----------------------------
 // 1. Charger les événements JSON
