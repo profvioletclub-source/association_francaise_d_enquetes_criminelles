@@ -83,12 +83,32 @@ function renderCalendar() {
 // -----------------------------
 // 3. Affichage des événements du jour
 // -----------------------------
-function showEvents(dateStr) {
-  const list = events.filter(ev => ev.date === dateStr);
 
-  details.innerHTML = list.length
-    ? list.map(ev => `<p><strong>${new Date(ev.date).toLocaleDateString("fr-FR")}</strong> — ${ev.title}</p>`).join("")
-    : "<p>Aucun événement ce jour.</p>";
+function showEvents(dateStr) {
+  const evts = events.filter(ev => ev.date === dateStr);
+  const decs = decisions.filter(dec => dec.date === dateStr);
+
+  let html = "";
+
+  if (evts.length > 0) {
+    html += "<h3>Événements</h3>";
+    html += evts.map(ev =>
+      `<p><strong>${new Date(ev.date).toLocaleDateString("fr-FR")}</strong> — ${ev.title}</p>`
+    ).join("");
+  }
+
+  if (decs.length > 0) {
+    html += "<h3>Décisions du Conseil</h3>";
+    html += decs.map(dec =>
+      `<p><strong>${new Date(dec.date).toLocaleDateString("fr-FR")}</strong> — ${dec.id}</p>`
+    ).join("");
+  }
+
+  if (html === "") {
+    html = "<p>Aucun événement ce jour.</p>";
+  }
+
+  details.innerHTML = html;
 }
 
 // -----------------------------
