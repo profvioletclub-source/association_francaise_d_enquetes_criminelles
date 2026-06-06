@@ -63,10 +63,12 @@ function renderCalendar() {
 
     let cssClass = "day";
 
-    if (hasDecision) {
-      cssClass += " decision-day"; // priorité au rouge
+    if (hasEvent && hasDecision) {
+      cssClass += " mix-day"; // moitié violet moitié rouge
+    } else if (hasDecision) {
+      cssClass += " decision-day"; // rouge
     } else if (hasEvent) {
-      cssClass += " event-day";
+      cssClass += " event-day"; // violet
     }
 
     grid.innerHTML += `
