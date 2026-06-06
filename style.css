@@ -461,3 +461,20 @@ tr:nth-child(even) {
   color: white;
   font-weight: bold;
 }
+
+.legende-couleur {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.legende-violet {
+  background: var(--violet-pastel);
+}
+
+.legende-rouge {
+  background: var(--rouge-profond);
+}
