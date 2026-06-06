@@ -209,7 +209,16 @@ function afficherTroisEvenements() {
   const container = document.getElementById("event-list");
   if (!container) return;
 
-  const sorted = events.sort((a, b) => new Date(a.date) - new Date(b.date));
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); // éviter les problèmes d'heure
+
+  // 1. Filtrer les événements futurs ou du jour
+  const futurs = events.filter(ev => new Date(ev.date) >= today);
+
+  // 2. Trier par date
+  const sorted = futurs.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  // 3. Prendre les 3 prochains
   const prochains = sorted.slice(0, 3);
 
   container.innerHTML = "";
@@ -224,5 +233,3 @@ function afficherTroisEvenements() {
     container.appendChild(card);
   });
 }
-
-document.addEventListener("DOMContentLoaded", chargerEvenements);
