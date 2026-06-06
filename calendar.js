@@ -95,14 +95,14 @@ function showEvents(dateStr) {
   if (evts.length > 0) {
     html += "<h3>Événements</h3>";
     html += evts.map(ev =>
-      `<p><strong>${new Date(ev.date).toLocaleDateString("fr-FR")}</strong> — ${ev.title} – ${ev.subtitle}</p>`
+      `<p><strong>${new Date(ev.date).toLocaleDateString("fr-FR")}</strong> — ${ev.title} ${ev.subtitle} ${ev.link}</p>`
     ).join("");
   }
 
   if (decs.length > 0) {
     html += "<h3>Décisions du Conseil</h3>";
     html += decs.map(dec =>
-      `<p><strong>${new Date(dec.date).toLocaleDateString("fr-FR")}</strong> — ${dec.id} ${dec.titre}</p>`
+      `<p><strong>${new Date(dec.date).toLocaleDateString("fr-FR")}</strong> — ${dec.id} – ${dec.titre}</p>`
     ).join("");
   }
 
