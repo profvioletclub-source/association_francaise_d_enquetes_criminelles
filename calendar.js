@@ -9,7 +9,7 @@ let events = []; // sera rempli depuis events.json
 // -----------------------------
 async function chargerEvenementsCalendrier() {
   try {
-    const response = await fetch("events.json?v=1"); // change v=1 si tu modifies le JSON
+    const response = await fetch("events.json");
     events = await response.json();
     renderCalendar();
   } catch (error) {
