@@ -488,3 +488,90 @@ tr:nth-child(even) {
   color: white;
   font-weight: bold;
 }
+
+/* --- Organigramme AFEC --- */
+
+.page-organigramme {
+  background-color: var(--blanc-casse);
+  font-family: 'Lato', sans-serif;
+  color: var(--gris-anthracite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tree li {
+  list-style-type: none;
+  margin: 0 1rem;
+  text-align: center;
+  position: relative;
+  padding: 1rem 0.5rem;
+}
+
+/* Lignes reliant les boîtes */
+.tree li::before,
+.tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid var(--bleu-onu);
+  width: 50%;
+  height: 20px;
+}
+
+.tree li::before {
+  left: -50%;
+  border-right: 2px solid var(--bleu-onu);
+}
+
+.tree li::after {
+  right: -50%;
+  border-left: 2px solid var(--bleu-onu);
+}
+
+.tree li:only-child::before,
+.tree li:only-child::after {
+  display: none;
+}
+
+.tree li:only-child {
+  padding-top: 0;
+}
+
+.tree li > ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid var(--bleu-onu);
+  height: 20px;
+}
+
+.node {
+  background-color: var(--violet-pastel);
+  border: 2px solid var(--gris-anthracite);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.node:hover {
+  background-color: var(--rouge-profond);
+  color: var(--blanc-casse);
+  transition: 0.3s;
+}
