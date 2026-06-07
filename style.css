@@ -491,6 +491,16 @@ tr:nth-child(even) {
 
 /* --- Organigramme AFEC --- */
 
+:root {
+  --violet-pastel: #C8BFE7;
+  --blanc-casse: #F5F5F5;
+  --gris-anthracite: #2E2E2E;
+  --rouge-profond: #8B0000;
+  --bleu-onu: #A3D5E0;
+}
+
+/* --- Organigramme AFEC --- */
+
 .page-organigramme {
   background-color: var(--blanc-casse);
   font-family: 'Lato', sans-serif;
@@ -522,7 +532,6 @@ tr:nth-child(even) {
   padding: 1rem 0.5rem;
 }
 
-/* Lignes reliant les boîtes */
 .tree li::before,
 .tree li::after {
   content: '';
