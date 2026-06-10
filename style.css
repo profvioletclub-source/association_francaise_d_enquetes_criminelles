@@ -531,6 +531,9 @@ tr:nth-child(even) {
   padding: 1rem 0.5rem;
 }
 
+/* --- TRAITS CORRIGÉS --- */
+
+/* Lignes horizontales entre frères */
 .tree li::before,
 .tree li::after {
   content: '';
@@ -551,20 +554,19 @@ tr:nth-child(even) {
   border-left: 2px solid var(--bleu-onu);
 }
 
+/* Pas de traits si enfant unique */
 .tree li:only-child::before,
 .tree li:only-child::after {
   display: none;
 }
 
-.tree li:only-child {
-  padding-top: 0;
-}
-
-.tree li > ul::before {
+/* Trait vertical entre parent et enfants */
+.tree ul ul::before {
   content: '';
   position: absolute;
   top: 0;
   left: 50%;
+  transform: translateX(-50%);
   border-left: 2px solid var(--bleu-onu);
   height: 20px;
 }
