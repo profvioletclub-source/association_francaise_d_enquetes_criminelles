@@ -520,8 +520,7 @@ tr:nth-child(even) {
 .tree ul {
   padding-top: 20px;
   position: relative;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .tree li {
