@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon compte</title>
+</head>
+<body>
 
+  <h1>Mon compte</h1>
+
+  <div id="status">Chargement...</div>
+
+  <p><strong>Nom :</strong> <span id="lastName"></span></p>
+  <p><strong>Prénom :</strong> <span id="firstName"></span></p>
+  <p><strong>Deuxièmes prénoms :</strong> <span id="middleNames"></span></p>
+  <p><strong>Date de naissance :</strong> <span id="birthDate"></span></p>
+  <p><strong>Lieu de naissance :</strong> <span id="birthPlace"></span></p>
+
+  <!-- Charger Firebase (obligatoire) -->
+  <script type="module">
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+    import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
+
+    // ⚠️ PAS de initializeApp ici !
+    // On réutilise l'instance déjà créée dans connexion.js
+
+    const auth = getAuth();
+    const db = getFirestore();
+
+    onAuthStateChanged(auth, async (user) => {
+      if (!user) {
+        document.getElementById("status").textContent = "Vous devez être connecté.";
+        return;
+      }
+
+      const ref = doc(db, "users", user.uid);
+      const snap = await getDoc(ref);
+
+      if (!snap.exists()) {
+        document.getElementById("status").textContent = "Aucune donnée trouvée.";
+        return;
+      }
+
+      const data = snap.data();
+      document.getElementById("status").textContent = "Données chargées.";
+
+      document.getElementById("firstName").textContent = data.firstName || "";
+      document.getElementById("lastName").textContent = data.lastName || "";
+      document.getElementById("middleNames").textContent = (data.middleNames || []).join(", ");
+      document.getElementById("birthDate").textContent = data.birthDate || "";
+      document.getElementById("birthPlace").textContent = data.birthPlace || "";
+    });
+  </script>
+
+</body>
+</html>
