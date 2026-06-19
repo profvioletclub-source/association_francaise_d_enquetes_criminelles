@@ -1,6 +1,3 @@
-// Vérification que le script est chargé
-alert("compte.js chargé");
-
 // Attendre que Firebase soit prêt
 document.addEventListener("DOMContentLoaded", () => {
 
