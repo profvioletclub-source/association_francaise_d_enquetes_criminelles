@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Mon compte</title>
+
+  <!-- Firebase v8 (même version que connexion.js) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <!-- Ton fichier connexion.js doit être chargé AVANT le script ci-dessous -->
+  <script src="connexion.js"></script>
 </head>
 <body>
 
@@ -16,27 +24,20 @@
   <p><strong>Date de naissance :</strong> <span id="birthDate"></span></p>
   <p><strong>Lieu de naissance :</strong> <span id="birthPlace"></span></p>
 
-  <!-- Charger Firebase (obligatoire) -->
-  <script type="module">
-    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
-    import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
+  <script>
+    const auth = firebase.auth();
+    const db = firebase.firestore();
 
-    // ⚠️ PAS de initializeApp ici !
-    // On réutilise l'instance déjà créée dans connexion.js
-
-    const auth = getAuth();
-    const db = getFirestore();
-
-    onAuthStateChanged(auth, async (user) => {
+    auth.onAuthStateChanged(async (user) => {
       if (!user) {
         document.getElementById("status").textContent = "Vous devez être connecté.";
         return;
       }
 
-      const ref = doc(db, "users", user.uid);
-      const snap = await getDoc(ref);
+      const ref = db.collection("users").doc(user.uid);
+      const snap = await ref.get();
 
-      if (!snap.exists()) {
+      if (!snap.exists) {
         document.getElementById("status").textContent = "Aucune donnée trouvée.";
         return;
       }
