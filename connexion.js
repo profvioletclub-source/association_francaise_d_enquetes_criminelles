@@ -1,5 +1,3 @@
-alert("connexion.js chargé");
-
 // --- CONFIG FIREBASE ---
 const firebaseConfig = {
   apiKey: "AIzaSyDglfwLWM8V_MkKp7p4SRCR4nf4jaL4a14",
