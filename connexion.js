@@ -45,7 +45,7 @@ if (document.getElementById("login-btn")) {
         auth.signInWithEmailAndPassword(emailToUse, password)
             .then(() => {
                 const redirect = getQueryParam("redirect");
-                window.location.href = redirect ? "/Cours_USMB_Histoire_SPD/" + redirect : "/Cours_USMB_Histoire_SPD/accueil.html";
+                window.location.href = redirect ? "/association_francaise_d_enquetes_criminelles/" + redirect : "/association_francaise_d_enquetes_criminelles/index.html";
             })
             .catch(error => {
                 document.getElementById("error-message").textContent = error.message;
@@ -68,7 +68,7 @@ if (document.getElementById("login-btn")) {
 if (document.getElementById("logout-btn")) {
     document.getElementById("logout-btn").addEventListener("click", () => {
         auth.signOut().then(() => {
-            window.location.href = "/Cours_USMB_Histoire_SPD/index.html";
+            window.location.href = "/association_francaise_d_enquetes_criminelles/connexion.html";
         });
     });
 }
