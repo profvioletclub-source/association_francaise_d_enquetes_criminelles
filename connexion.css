@@ -1,0 +1,203 @@
+/* --- RESET SIMPLE --- */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- STRUCTURE --- */
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.liste-cours li {
+    margin: 8px 0;
+}
+
+/* --- BOUTON --- */
+button {
+    background: #003366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #0055aa;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    margin-top: 40px;
+}
+
+.login-container {
+    max-width: 350px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.logout {
+    background: #aa0000;
+    margin-left: 20px;
+}
+
+
+/* Conteneur déroulant */
+.dropdown {
+    margin-bottom: 10px;
+}
+
+/* Titre cliquable */
+.dropdown-title {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 0;
+}
+
+/* Contenu caché par défaut */
+.dropdown-content {
+    display: none;
+    margin-left: 20px;
+}
+
+/* Style des liens */
+.dropdown-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Espacement des éléments */
+.dropdown-content li {
+    margin: 4px 0;
+}
+
+/* --- PAGE DE CONNEXION --- */
+
+body.login-page {
+    background: #f5f5f5;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 120px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #003366;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.login-container input:focus {
+    border-color: #003366;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0,51,102,0.3);
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-container button:hover {
+    background: #0055aa;
+}
+
+#error-message {
+    margin-top: 15px;
+    color: #aa0000;
+    font-weight: bold;
+}
+
+/* --- LIENS SANS STYLE PAR DÉFAUT --- */
+a {
+    color: inherit;          /* même couleur que le texte autour */
+    text-decoration: none;   /* enlève le soulignement */
+}
+
+a:visited {
+    color: inherit;          /* évite le violet après clic */
+}
+
+a:hover {
+    text-decoration: underline; /* optionnel : petit soulignement au survol */
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+}
