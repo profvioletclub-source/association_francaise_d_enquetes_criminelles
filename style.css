@@ -601,42 +601,43 @@ tr:nth-child(even) {
 }
 
 /* ================================
-   PAGE DE CONNEXION (scopée)
+   PAGE DE CONNEXION — STYLE AFEC
    ================================ */
 
 .login-page {
-    background: #f5f5f5;
-    font-family: "Segoe UI", Roboto, sans-serif;
-    color: #222;
-    line-height: 1.6;
+    background: var(--blanc-casse);
+    font-family: 'Lato', sans-serif;
+    color: var(--gris-anthracite);
 }
 
-/* Header spécifique connexion */
+/* Header */
 .login-page header {
-    background: #003366;
-    color: white;
-    padding: 20px;
+    background: var(--violet-pastel);
+    color: var(--gris-anthracite);
+    padding: 2rem;
     text-align: center;
 }
 
 .login-page header h1 {
-    margin-bottom: 10px;
+    margin: 0;
+    font-family: 'Courier New', monospace;
 }
 
-/* Conteneur principal */
+/* Conteneur */
 .login-page .login-container {
     max-width: 400px;
     margin: 120px auto;
-    background: white;
+    background: var(--blanc-casse);
     padding: 35px;
     border-radius: 10px;
+    border: 1px solid var(--gris-anthracite);
     box-shadow: 0 0 12px rgba(0,0,0,0.12);
     text-align: center;
 }
 
 /* Titre */
 .login-page .login-container h1 {
-    color: #003366;
+    color: var(--rouge-profond);
     margin-bottom: 25px;
     font-size: 1.8em;
 }
@@ -646,37 +647,41 @@ tr:nth-child(even) {
     width: 100%;
     padding: 12px;
     margin: 12px 0;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gris-anthracite);
     border-radius: 6px;
     font-size: 1em;
+    background: var(--blanc-casse);
+    color: var(--gris-anthracite);
 }
 
 .login-page input:focus {
-    border-color: #003366;
+    border-color: var(--rouge-profond);
     outline: none;
-    box-shadow: 0 0 4px rgba(0,51,102,0.3);
+    box-shadow: 0 0 4px rgba(139,0,0,0.3);
 }
 
 /* Bouton */
 .login-page button {
     width: 100%;
     padding: 12px;
-    background: #003366;
-    color: white;
+    background: var(--rouge-profond);
+    color: var(--blanc-casse);
     border: none;
     border-radius: 6px;
     font-size: 1.1em;
     cursor: pointer;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .login-page button:hover {
-    background: #0055aa;
+    background: var(--violet-pastel);
+    color: var(--gris-anthracite);
 }
 
 /* Message d’erreur */
 .login-page #error-message {
     margin-top: 15px;
-    color: #aa0000;
+    color: var(--rouge-profond);
     font-weight: bold;
 }
