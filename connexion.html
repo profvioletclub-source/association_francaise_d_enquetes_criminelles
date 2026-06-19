@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion – AFEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+    <header>
+        <h1>Connexion – AFEC</h1>
+    </header>
+    <p>*  Pour vous connecter, vous devez disposer d'un compte membre fourni par la Direction ou le Secrétariat Général</p>
+    <p>*  Si vous n'arrivez pas a vous connecter, merci de contacter la Direction (contact.afec.association@gmail.com</p>
+    <main class="login-container">
+        <h1>Connexion</h1>
+
+        <input type="email" id="email" placeholder="Email ou Pseudo">
+        <input type="password" id="password" placeholder="Mot de passe">
+
+        <button id="login-btn">Se connecter</button>
+
+        <p id="error-message"></p>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
