@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Mon compte</title>
-
-  <!-- Firebase v8 -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFEC – Mon compte membre</title>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-
-  <!-- Initialisation Firebase -->
-  <script src="connexion.js"></script>
-
-  <!-- Script de la page -->
+  <script src="connexion.js"></script
   <script src="compte.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
+  
 <body>
+  <header>
+    <button class="menu-btn" onclick="toggleSidebar()">☰ Menu</button>
+    <img src="images/logo.jpeg" alt="Logo AFEC" class="logo" />
+    <h1>Mon compte membre</h1>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+    </ul>
+  </header>
 
-  <h1>Mon compte</h1>
+  <main>
+    <div id="status">Chargement...</div>
 
-  <a href="index.html">Accueil</a>
-
-  <div id="status">Chargement...</div>
-
-  <p><strong>Nom :</strong> <span id="lastName"></span></p>
-  <p><strong>Prénom :</strong> <span id="firstName"></span></p>
-  <p><strong>Deuxièmes prénoms :</strong> <span id="middleNames"></span></p>
-  <p><strong>Date de naissance :</strong> <span id="birthDate"></span></p>
-  <p><strong>Lieu de naissance :</strong> <span id="birthPlace"></span></p>
-
+    <p><strong>Nom :</strong> <span id="lastName"></span></p>
+    <p><strong>Prénom :</strong> <span id="firstName"></span></p>
+    <p><strong>Deuxièmes prénoms :</strong> <span id="middleNames"></span></p>
+    <p><strong>Date de naissance :</strong> <span id="birthDate"></span></p>
+    <p><strong>Lieu de naissance :</strong> <span id="birthPlace"></span></p>
+  </main>
+  <footer>
+    <p>&copy; 2026 AFEC - Tous droits réservés</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
