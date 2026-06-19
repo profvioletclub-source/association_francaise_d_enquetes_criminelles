@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = snap.data();
 
         document.getElementById("status").textContent =
-            "Connecté : " + (data.pseudo || user.email);
+            "Connecté : " + (data.ndc || user.email);
 
         document.getElementById("firstName").textContent = data.firstName || "";
         document.getElementById("lastName").textContent = data.lastName || "";
