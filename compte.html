@@ -27,11 +27,21 @@
   <p><strong>Lieu de naissance :</strong> <span id="birthPlace"></span></p>
 
   <script>
-    document.getElementById("status").textContent = "Le script fonctionne.";
+    const auth = firebase.auth();
+
+    auth.onAuthStateChanged((user) => {
+      if (!user) {
+        document.getElementById("status").textContent = "PAS CONNECTÉ";
+        return;
+      }
+
+      document.getElementById("status").textContent =
+        "Connecté en tant que : " + user.email;
+    });
   </script>
 
   
-<!--  <script>
+  <script>
     const auth = firebase.auth();
     const db = firebase.firestore();
 
@@ -58,7 +68,7 @@
       document.getElementById("birthDate").textContent = data.birthDate || "";
       document.getElementById("birthPlace").textContent = data.birthPlace || "";
     });
-  </script>-->
+  </script>
 
 </body>
 </html>
