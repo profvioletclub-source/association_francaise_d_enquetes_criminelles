@@ -585,3 +585,17 @@ tr:nth-child(even) {
   color: var(--blanc-casse);
   transition: 0.3s;
 }
+
+/*ARCHIVES HISTOIRE*/
+
+.bloc-archive {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.bloc-archive img {
+  width: 200px;
+  border-radius: 6px;
+}
