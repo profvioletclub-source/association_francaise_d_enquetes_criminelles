@@ -28,18 +28,31 @@
 
   <script>
     const auth = firebase.auth();
+    const db = firebase.firestore();
 
-    auth.onAuthStateChanged((user) => {
+    auth.onAuthStateChanged(async (user) => {
       if (!user) {
         document.getElementById("status").textContent = "PAS CONNECTÉ";
         return;
       }
 
+      // 🔹 Affiche l'email pour vérifier la session
+      document.getElementById("status").textContent = "Connecté : " + user.email;
+
+      // 🔹 Récupère le pseudo dans Firestore
+      const ref = db.collection("users").doc(user.uid);
+      const snap = await ref.get();
+
+      if (!snap.exists) {
+        document.getElementById("status").textContent += " (aucune donnée Firestore)";
+        return;
+      }
+
+      const data = snap.data();
       document.getElementById("status").textContent =
-        "Connecté en tant que : " + user.email;
+        "Connecté : " + (data.pseudo || user.email);
     });
   </script>
-
   
   <script>
     const auth = firebase.auth();
