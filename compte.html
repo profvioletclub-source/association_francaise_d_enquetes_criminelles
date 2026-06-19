@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <title>Mon compte</title>
 
-  <!-- Firebase v8 (même version que connexion.js) -->
+  <!-- Firebase v8 -->
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
-  <!-- Ton fichier connexion.js doit être chargé AVANT le script ci-dessous -->
+  <!-- Ton script qui initialise Firebase -->
   <script src="connexion.js"></script>
 </head>
 <body>
@@ -47,7 +47,7 @@
 
       document.getElementById("firstName").textContent = data.firstName || "";
       document.getElementById("lastName").textContent = data.lastName || "";
-      document.getElementById("middleNames").textContent = (data.middleNames || []).join(", ");
+      document.getElementById("middleNames").textContent = data.middleNames || "";
       document.getElementById("birthDate").textContent = data.birthDate || "";
       document.getElementById("birthPlace").textContent = data.birthPlace || "";
     });
