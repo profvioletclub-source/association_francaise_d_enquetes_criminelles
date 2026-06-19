@@ -9,7 +9,7 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
-  <!-- Ton script qui initialise Firebase -->
+  <!-- Script d'initialisation Firebase -->
   <script src="connexion.js"></script>
 </head>
 <body>
@@ -27,34 +27,7 @@
   <p><strong>Lieu de naissance :</strong> <span id="birthPlace"></span></p>
 
   <script>
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-
-    auth.onAuthStateChanged(async (user) => {
-      if (!user) {
-        document.getElementById("status").textContent = "PAS CONNECTÉ";
-        return;
-      }
-
-      // 🔹 Affiche l'email pour vérifier la session
-      document.getElementById("status").textContent = "Connecté : " + user.email;
-
-      // 🔹 Récupère le pseudo dans Firestore
-      const ref = db.collection("users").doc(user.uid);
-      const snap = await ref.get();
-
-      if (!snap.exists) {
-        document.getElementById("status").textContent += " (aucune donnée Firestore)";
-        return;
-      }
-
-      const data = snap.data();
-      document.getElementById("status").textContent =
-        "Connecté : " + (data.pseudo || user.email);
-    });
-  </script>
-  
-  <script>
+    // Firebase déjà initialisé dans connexion.js
     const auth = firebase.auth();
     const db = firebase.firestore();
 
@@ -64,17 +37,25 @@
         return;
       }
 
+      // Affiche l'email pour vérifier la session
+      document.getElementById("status").textContent = "Connecté : " + user.email;
+
+      // Récupération des données Firestore
       const ref = db.collection("users").doc(user.uid);
       const snap = await ref.get();
 
       if (!snap.exists) {
-        document.getElementById("status").textContent = "Aucune donnée trouvée.";
+        document.getElementById("status").textContent += " (aucune donnée Firestore)";
         return;
       }
 
       const data = snap.data();
-      document.getElementById("status").textContent = "Données chargées.";
 
+      // Affiche le pseudo si disponible
+      document.getElementById("status").textContent =
+        "Connecté : " + (data.pseudo || user.email);
+
+      // Remplissage des champs
       document.getElementById("firstName").textContent = data.firstName || "";
       document.getElementById("lastName").textContent = data.lastName || "";
       document.getElementById("middleNames").textContent = data.middleNames || "";
