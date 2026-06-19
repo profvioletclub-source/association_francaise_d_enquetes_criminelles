@@ -1,11 +1,11 @@
 // --- CONFIG FIREBASE ---
 const firebaseConfig = {
-  apiKey: "AIzaSyD40uUgxFoEyz13kNbRKIqhUHhYqTFivWA",
-  authDomain: "cours-l1-spd.firebaseapp.com",
-  projectId: "cours-l1-spd",
-  storageBucket: "cours-l1-spd.appspot.com",
-  messagingSenderId: "78540999306",
-  appId: "1:78540999306:web:fc64877610d1a998a1fb73"
+  apiKey: "AIzaSyDglfwLWM8V_MkKp7p4SRCR4nf4jaL4a14",
+  authDomain: "afec-asso.firebaseapp.com",
+  projectId: "afec-asso",
+  storageBucket: "afec-asso.firebasestorage.app",
+  messagingSenderId: "606731063826",
+  appId: "1:606731063826:web:17613fa2efd3e3badcbecb"
 };
 
 firebase.initializeApp(firebaseConfig);
