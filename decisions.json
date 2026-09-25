@@ -7,11 +7,18 @@
     "votes": "? FAVORABLE, ? DÉFAVORABLE, ? ABSTENTION"
   },
   {
+    "id": "Référendum 2026-01",
+    "titre": "Création de la fonction de Vice-Conseiller Général & répartition de l'intérim du Directeur",
+    "date": "2026-09-25",
+    "propose": "CONSEIL",
+    "votes": "? POUR, ? CONTRE, ? ABSTENTION"
+  },
+  {
     "id": "2026-03",
     "titre": "Création de la fonction de Vice-Conseiller Général & répartition de l'intérim du Directeur",
     "date": "2026-09-24",
     "propose": "VIOLET (en vu de référendum)",
-    "votes": "? POUR, ? CONTRE, ? ABSTENTION"
+    "votes": "5 POUR (SMITH, VIOLET, VON HELLMAN, ORCHIDÉE, MOUTARDE), 0 CONTRE, 0 ABSTENTION"
   },
   {
     "id": "2026-02",
