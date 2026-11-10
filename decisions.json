@@ -1,5 +1,19 @@
 [
   {
+    "id": "Référendum 2026-02",
+    "titre": "Création d'Élections Directrice selon le communiqué du 09 novembre 2026",
+    "date": "2026-11-13",
+    "propose": "CONSEIL",
+    "votes": "? POUR, ? CONTRE, ? ABSTENTION"
+  },
+  {
+    "id": "2026-04",
+    "titre": "Création d'Élections Directrices selon le communiqué du 09 novembre 2026",
+    "date": "2026-11-12",
+    "propose": "VIOLET (en vu d'un référendum)",
+    "votes": "? POUR, ? CONTRE, ? ABSTENTION"
+  },
+  {
     "id": "Consultation pour modification de l'Organigramme",
     "titre": "Modification de l'Organigramme",
     "date": "2026-10-03",
